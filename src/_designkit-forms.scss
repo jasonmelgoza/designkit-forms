@@ -1,0 +1,70 @@
+// base form controls
+
+// overrides
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form-control,
+.form-select {
+  min-height: rem(34);
+  padding: rem(7) rem(8);
+  font-size: 13px;
+  color: $text;
+  vertical-align: middle;
+  background-color: #fff;
+  background-repeat: no-repeat; // Repeat and position set for form states (success, error, etc)
+  background-position: right 8px center; // For form validation. This keeps images 8px from right and centered vertically.
+  border: 1px solid $grey-border;
+  border-radius: 2px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+
+  &.focus,
+  &:focus {
+    border-color: darken($grey-border, 5);
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
+  }
+}
+
+// small inputs
+.input-sm {
+  min-height: rem(26);
+  padding-top: rem(4);
+  padding-bottom: rem(4);
+  font-size: 12px;
+}
+
+// large inputs
+.input-lg {
+  padding: rem(6) rem(10);
+  font-size: 16px;
+}
+
+// full-width inputs
+.input-block {
+  display: block;
+  width: 100%;
+}
+
+// checkboxes and radio buttons (tbd)
+.form-checkbox {
+
+  label {
+
+  }
+
+  input[type=checkbox],
+  input[type=radio] {
+
+  }
+
+}
