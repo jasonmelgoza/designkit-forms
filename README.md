@@ -9,9 +9,9 @@ npm i designkit-forms
 ## Usage
 
 ```html
-<form action="">
-  <label for="">Form Label</label>
-  <input class="form-control" type="text" name="name" value="" placeholder="Placeholder text...">
+<form>
+  <label for="my_input">Form Label</label>
+  <input id="my_input" class="form-control" type="text" name="name" value="" placeholder="Placeholder text...">
 </form>
 ```
 
@@ -30,8 +30,35 @@ fieldset {
 }
 
 label {
-  font-size: 12px;
+  display: block;
+  font-size: 11px;
   font-weight: bold;
+  color: #57626C;
+  margin-bottom: 0.3rem;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #c2cad2;
+  /* 50% of #8596A5 */
+  vertical-align: middle;
+}
+
+.form-control::-moz-placeholder {
+  color: #c2cad2;
+  /* 50% of #8596A5 */
+  vertical-align: middle;
+}
+
+.form-control:-moz-placeholder {
+  color: #c2cad2;
+  /* 50% of #8596A5 */
+  vertical-align: middle;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #c2cad2;
+  /* 50% of #8596A5 */
+  vertical-align: middle;
 }
 
 .form-control,
@@ -42,20 +69,30 @@ label {
   color: #76899A;
   vertical-align: middle;
   background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: right 8px center;
   border: 1px solid #D1D6DC;
+  border-top-color: #cbd1d8;
   border-radius: 2px;
   outline: none;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .form-control.focus, .form-control:focus,
 .form-select.focus,
 .form-select:focus {
-  border-color: #c3c9d1;
+  border-color: #a6afbb;
+  border-bottom-color: #a0aab7;
   outline: none;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
+}
+
+.form-select {
+  border: 1px solid #D1D6DC;
+  box-shadow: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
 }
 
 .input-sm {
