@@ -1,6 +1,3 @@
-// base form controls
-
-// overrides
 fieldset {
   padding: 0;
   margin: 0;
@@ -8,8 +5,18 @@ fieldset {
 }
 
 label {
-  font-size: 12px;
+  display: block;
+  font-size: 11px;
   font-weight: bold;
+  color: $heading;
+  margin-bottom: 0.3rem;
+}
+
+.form-control {
+  @include placeholder {
+    color: #c2cad2; /* 50% of #8596A5 */
+    vertical-align: middle;
+  }
 }
 
 .form-control,
@@ -20,19 +27,25 @@ label {
   color: $text;
   vertical-align: middle;
   background-color: #fff;
-  background-repeat: no-repeat; // Repeat and position set for form states (success, error, etc)
-  background-position: right 8px center; // For form validation. This keeps images 8px from right and centered vertically.
   border: 1px solid $grey-border;
+  border-top-color: darken($grey-border, 2);
   border-radius: 2px;
   outline: none;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 2px rgba(#000, 0.08);
 
   &.focus,
   &:focus {
-    border-color: darken($grey-border, 20);
+    border-color: darken($grey-border, 15);
+    border-bottom-color: darken($grey-border, 17);
     outline: none;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
   }
+}
+
+.form-select {
+  border: 1px solid $grey-border;
+  box-shadow: none;
+  cursor: pointer;
+  @include appearance(none);
 }
 
 // small inputs
