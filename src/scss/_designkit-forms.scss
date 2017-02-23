@@ -21,8 +21,8 @@ label {
 
 .form-control,
 .form-select {
-  min-height: rem(34);
-  padding: rem(7) rem(8);
+  min-height: 36px;
+  padding: 8px;
   font-size: 13px;
   color: $text;
   vertical-align: middle;
@@ -50,15 +50,15 @@ label {
 
 // small inputs
 .input-sm {
-  min-height: rem(26);
-  padding-top: rem(4);
-  padding-bottom: rem(4);
+  min-height: 26px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   font-size: 12px;
 }
 
 // large inputs
 .input-lg {
-  padding: rem(6) rem(10);
+  padding: 10px;
   font-size: 16px;
 }
 
