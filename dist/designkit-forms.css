@@ -1,6 +1,6 @@
 /*
 //
-// Designkit-Forms
+// Designkit-Buttons
 // --------------------------------------------------
 */
 fieldset {
@@ -43,8 +43,8 @@ label {
 
 .form-control,
 .form-select {
-  min-height: 2.125rem;
-  padding: 0.4375rem 0.5rem;
+  min-height: 36px;
+  padding: 8px;
   font-size: 13px;
   color: #76899A;
   vertical-align: middle;
@@ -76,14 +76,14 @@ label {
 }
 
 .input-sm {
-  min-height: 1.625rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  min-height: 26px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   font-size: 12px;
 }
 
 .input-lg {
-  padding: 0.375rem 0.625rem;
+  padding: 10px;
   font-size: 16px;
 }
 
