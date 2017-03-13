@@ -10,8 +10,9 @@ npm i designkit-forms
 
 ```html
 <form>
-  <label for="my_input">Form Label</label>
-  <input id="my_input" class="form-control" type="text" name="name" value="" placeholder="Placeholder text...">
+  <label for="name">Basic Form Label</label>
+  <input class="form-control" type="text" id="name" placeholder="Placeholder text...">
+  <p class="form-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </form>
 ```
 
@@ -20,7 +21,7 @@ npm i designkit-forms
 ```css
 /*
 //
-// Designkit-Buttons
+// Designkit-Forms
 // --------------------------------------------------
 */
 fieldset {
@@ -31,33 +32,36 @@ fieldset {
 
 label {
   display: block;
+  margin-bottom: .3rem;
   font-size: 11px;
   font-weight: bold;
   color: #57626C;
-  margin-bottom: 0.3rem;
+}
+
+.form-note {
+  min-height: 17px;
+  margin: 4px 0 2px;
+  font-size: 12px;
+  color: #76899A;
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #c2cad2;
-  /* 50% of #8596A5 */
+  color: #bfc8d0;
   vertical-align: middle;
 }
 
 .form-control::-moz-placeholder {
-  color: #c2cad2;
-  /* 50% of #8596A5 */
+  color: #bfc8d0;
   vertical-align: middle;
 }
 
 .form-control:-moz-placeholder {
-  color: #c2cad2;
-  /* 50% of #8596A5 */
+  color: #bfc8d0;
   vertical-align: middle;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #c2cad2;
-  /* 50% of #8596A5 */
+  color: #bfc8d0;
   vertical-align: middle;
 }
 
@@ -85,9 +89,9 @@ label {
 }
 
 .form-select {
+  cursor: pointer;
   border: 1px solid #D1D6DC;
   box-shadow: none;
-  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -110,6 +114,32 @@ label {
 .input-block {
   display: block;
   width: 100%;
+}
+
+.form-checkbox {
+  padding-left: 20px;
+  margin: 15px 0;
+  vertical-align: middle;
+}
+
+.form-checkbox label {
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.form-checkbox input[type=checkbox],
+.form-checkbox input[type=radio] {
+  float: left;
+  margin: 5px 0 0 -20px;
+  vertical-align: middle;
+}
+
+.form-checkbox .form-note {
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
 }
 ```
 

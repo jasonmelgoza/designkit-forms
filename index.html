@@ -75,38 +75,83 @@
 <body>
   <header>
     <div class="wrapper">
-      <h1><a href="https://github.com/rightscale-design/designkit-forms">DesignKit - Forms</a> <span class="version">v1.0.0</span></h1>
+      <h1><a href="https://github.com/rightscale-design/designkit-forms">DesignKit - Forms</a> <span class="version">v1.1.0</span></h1>
     </div>
   </header>
+
   <div class="wrapper">
     <div>
+
       <form>
-        <label for="1">Form Label</label>
-        <input id="1" class="form-control" type="text" name="name" value="" placeholder="Placeholder text...">
+        <label for="name">Basic Form Label</label>
+        <input class="form-control" type="text" id="name" placeholder="Placeholder text...">
       </form>
+
       <br>
+
+      <form>
+        <label for="note">Basic Form Label w/ note</label>
+        <input class="form-control" type="text" id="note" placeholder="Placeholder text...">
+        <p class="form-note">Sample form note lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum cumque fugit culpa ad, aliquam porro at. Aliquam ipsam, totam eius accusamus tenetur, est nobis sint quod doloribus in earum consequuntur!</p>
+      </form>
+
+      <br>
+
       <form>
         <input class="form-control input-sm" type="text" placeholder="Small input...">
       </form>
       <br>
+
       <form>
         <input class="form-control input-lg" type="text" placeholder="Large input">
       </form>
+
       <br>
+
       <form>
         <input class="form-control input-block" type="text" placeholder="Full-width input...">
       </form>
+
       <br>
+
       <form>
         <select class="form-select">
-          <option>Choose an option</option>
+          <option>Select</option>
           <option>CAT</option>
           <option>Cloud</option>
           <option>Container</option>
           <option>UI</option>
         </select>
       </form>
+
+      <br>
+
+      <form>
+        <div class="form-checkbox">
+          <label>
+            <input type="checkbox" checked="checked">
+            Checkbox label
+          </label>
+          <p class="form-note">
+            This will do insanely <strong>awesome</strong> and <strong>amazing</strong> things!
+          </p>
+        </div>
+      </form>
+
+      <br>
+
+      <div class="form-checkbox">
+        <label>
+          <input type="Radio">
+          Radio label
+        </label>
+        <p class="form-note">
+          This will do insanely <strong>awesome</strong> and <strong>amazing</strong> things!
+        </p>
+      </div>
+
     </div>
+
   </div>
 </body>
 </html>
