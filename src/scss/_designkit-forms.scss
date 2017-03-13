@@ -6,15 +6,22 @@ fieldset {
 
 label {
   display: block;
+  margin-bottom: .3rem;
   font-size: 11px;
   font-weight: bold;
   color: $heading;
-  margin-bottom: 0.3rem;
+}
+
+.form-note {
+  min-height: 17px;
+  margin: 4px 0 2px;
+  font-size: 12px;
+  color: $text;
 }
 
 .form-control {
   @include placeholder {
-    color: #c2cad2; /* 50% of #8596A5 */
+    color: lighten(#76899a, 25%);
     vertical-align: middle;
   }
 }
@@ -31,7 +38,7 @@ label {
   border-top-color: darken($grey-border, 2);
   border-radius: 2px;
   outline: none;
-  box-shadow: inset 0 1px 2px rgba(#000, 0.08);
+  box-shadow: inset 0 1px 2px rgba(#000, .08);
 
   &.focus,
   &:focus {
@@ -42,9 +49,10 @@ label {
 }
 
 .form-select {
+  cursor: pointer;
   border: 1px solid $grey-border;
   box-shadow: none;
-  cursor: pointer;
+
   @include appearance(none);
 }
 
@@ -68,16 +76,29 @@ label {
   width: 100%;
 }
 
-// checkboxes and radio buttons (tbd)
+// checkboxes and radio buttons
 .form-checkbox {
+  padding-left: 20px;
+  margin: 15px 0;
+  vertical-align: middle;
 
   label {
-
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 1.8;
   }
 
   input[type=checkbox],
   input[type=radio] {
-
+    float: left;
+    margin: 5px 0 0 -20px;
+    vertical-align: middle;
   }
 
+  .form-note {
+    display: block;
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+  }
 }
