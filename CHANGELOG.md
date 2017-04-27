@@ -1,3 +1,7 @@
+# v1.1.2
+
+* Added caret image to selects
+
 # v1.1.1
 
 * Added disabled states style to form-control inputs and selects
