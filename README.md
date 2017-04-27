@@ -32,7 +32,7 @@ fieldset {
 
 label {
   display: block;
-  margin-bottom: .3rem;
+  margin-bottom: 5px;
   font-size: 11px;
   font-weight: bold;
   color: #57626C;
@@ -46,22 +46,22 @@ label {
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #bfc8d0;
+  color: #8d9dab;
   vertical-align: middle;
 }
 
 .form-control::-moz-placeholder {
-  color: #bfc8d0;
-  vertical-align: middle;
-}
-
-.form-control:-moz-placeholder {
-  color: #bfc8d0;
+  color: #8d9dab;
   vertical-align: middle;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #bfc8d0;
+  color: #8d9dab;
+  vertical-align: middle;
+}
+
+.form-control::placeholder {
+  color: #8d9dab;
   vertical-align: middle;
 }
 
@@ -78,14 +78,27 @@ label {
   border-radius: 2px;
   outline: none;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
 .form-control.focus, .form-control:focus,
 .form-select.focus,
 .form-select:focus {
-  border-color: #a6afbb;
-  border-bottom-color: #a0aab7;
+  border-color: #97a2b0;
+  border-bottom-color: #919dac;
   outline: none;
+  box-shadow: none;
+}
+
+.form-control[disabled],
+.form-control .disabled,
+.form-select[disabled],
+.form-select .disabled {
+  color: #90a0ad;
+  background: #F4F5F7;
+  border-color: #D1D6DC;
+  box-shadow: none;
 }
 
 .form-select {
@@ -93,10 +106,8 @@ label {
   border: 1px solid #D1D6DC;
   box-shadow: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .input-sm {

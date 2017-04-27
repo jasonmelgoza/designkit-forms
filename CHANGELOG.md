@@ -1,10 +1,17 @@
-# v1.0.0
+# v1.1.1
 
-* First release
-* File reorg
-* Updated padding to use pixels
+* Added disabled states style to form-control inputs and selects
+* Updated placeholder for improved readability
+* Removed un-needed button stylesheet
+* Update appearance rule for selects
 
 # v1.1.0
 
 * Added specific checkbox and radio styling
 * Added a note/helper text style
+
+# v1.0.0
+
+* First release
+* File reorg
+* Updated padding to use pixels
