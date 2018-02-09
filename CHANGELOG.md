@@ -1,3 +1,9 @@
+# v1.2.0
+
+* New build setup
+* Removed bourbon
+* Added new readme script
+
 # v1.1.2
 
 * Added caret image to selects
