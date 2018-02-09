@@ -1,29 +1,16 @@
-# Designkit Forms
+# designkit-forms
+1.1.3
+
+Sass module for css forms at RightScale.
 
 ## Install
-
-```bash
-npm i designkit-forms
+```
+npm i --save designkit-forms
 ```
 
-## Usage
-
-```html
-<form>
-  <label for="name">Basic Form Label</label>
-  <input class="form-control" type="text" id="name" placeholder="Placeholder text...">
-  <p class="form-note">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</form>
-```
-
-## The CSS
+### CSS
 
 ```css
-/*
-//
-// Designkit-Forms
-// --------------------------------------------------
-*/
 fieldset {
   padding: 0;
   margin: 0;
@@ -46,11 +33,6 @@ label {
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #8d9dab;
-  vertical-align: middle;
-}
-
-.form-control::-moz-placeholder {
   color: #8d9dab;
   vertical-align: middle;
 }
@@ -78,7 +60,6 @@ label {
   border-radius: 2px;
   outline: none;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
-  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
@@ -156,6 +137,7 @@ label {
   font-size: 12px;
   font-weight: normal;
 }
+
 ```
 
 ## Author
@@ -164,10 +146,4 @@ Jason Melgoza
 
 ## License
 
-The MIT License (MIT)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+MIT
