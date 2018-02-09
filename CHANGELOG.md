@@ -1,8 +1,8 @@
 # v1.2.0
 
-* New build setup
-* Removed bourbon
-* Added new readme script
+* Updated build setup
+* Updated package.json for sass importer
+* Removed Bourbon
 
 # v1.1.2
 
