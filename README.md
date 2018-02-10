@@ -8,7 +8,7 @@ Sass module for css forms at RightScale.
 npm i --save designkit-forms
 ```
 
-### CSS
+## CSS
 
 ```css
 fieldset {
