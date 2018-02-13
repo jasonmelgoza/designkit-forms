@@ -1,5 +1,5 @@
 # designkit-forms
-1.2.0
+1.2.1
 
 Sass module for css forms at RightScale.
 
