@@ -70,6 +70,11 @@ label {
   appearance: none;
 }
 
+.form-select[multiple] {
+  padding: 8px;
+  background: #fff;
+}
+
 .input-sm {
   min-height: 26px;
   padding-top: 4px;
