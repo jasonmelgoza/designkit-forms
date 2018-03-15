@@ -68,6 +68,11 @@ label {
   box-shadow: none;
 
   appearance: none;
+
+  &[multiple] {
+    padding: 8px;
+    background: #fff;
+  }
 }
 
 // small inputs

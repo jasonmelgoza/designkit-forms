@@ -1,3 +1,7 @@
+# v1.2.2
+
+* Added style support for `<select>` with multiple attribute
+
 # v1.2.1
 
 * Updated package.json

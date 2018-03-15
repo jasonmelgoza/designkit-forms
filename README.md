@@ -1,5 +1,5 @@
 # designkit-forms
-1.2.1
+1.2.2
 
 Sass module for css forms at RightScale.
 
@@ -93,6 +93,11 @@ label {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+}
+
+.form-select[multiple] {
+  padding: 8px;
+  background: #fff;
 }
 
 .input-sm {
