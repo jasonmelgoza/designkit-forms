@@ -129,3 +129,16 @@ label {
   font-size: 12px;
   font-weight: normal;
 }
+
+.form-group.errored label {
+  color: #C32525;
+}
+
+.form-group.errored .form-control,
+.form-group.errored .form-select {
+  border-color: #C32525;
+}
+
+.form-group.errored .form-note {
+  color: #C32525;
+}
