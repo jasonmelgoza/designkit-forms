@@ -1,3 +1,7 @@
+# v1.2.3
+
+* Added minor error validation styles
+
 # v1.2.2
 
 * Added style support for `<select>` with multiple attribute

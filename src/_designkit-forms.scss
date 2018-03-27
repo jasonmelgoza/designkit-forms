@@ -121,3 +121,21 @@ label {
     font-weight: normal;
   }
 }
+
+// form validation
+.form-group {
+
+  // error
+  &.errored {
+    label {
+      color: $red;
+    }
+    .form-control,
+    .form-select {
+      border-color: $red;
+    }
+    .form-note {
+      color: $red;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 # designkit-forms
-1.2.2
+1.2.3
 
 Sass module for css forms at RightScale.
 
@@ -141,6 +141,19 @@ label {
   margin: 0;
   font-size: 12px;
   font-weight: normal;
+}
+
+.form-group.errored label {
+  color: #C32525;
+}
+
+.form-group.errored .form-control,
+.form-group.errored .form-select {
+  border-color: #C32525;
+}
+
+.form-group.errored .form-note {
+  color: #C32525;
 }
 
 ```

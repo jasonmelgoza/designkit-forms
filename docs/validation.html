@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Designkit-Forms Examples</title>
+  <title>Designkit-Forms Validation</title>
   <link rel="stylesheet" href="https://unpkg.com/designkit-global@1.1.0/dist/designkit-global.min.css">
+  <link rel="stylesheet" href="./doc.min.css">
   <style>
     *,
     *:before,
@@ -31,19 +32,25 @@
       max-width: 900px;
       margin: 0 auto;
     }
+
   </style>
 </head>
 <body>
+
   <main>
     <header>
-      <h1>Designkit-Forms Examples</h1>
+      <h1>Designkit-Forms Validation</h1>
     </header>
     <section>
-      <ul>
-        <li><a href="./sample.html">Sample forms</a></li>
-        <li><a href="./validation.html">Validation</a></li>
-      </ul>
+      <form>
+        <div class="form-group errored">
+          <label for="name">Name</label>
+          <input class="form-control is-invalid ng-invalid" type="text" id="name">
+          <p class="form-note">This field is required.</p>
+        </div>
+      </form>
     </section>
   </main>
+
 </body>
 </html>
